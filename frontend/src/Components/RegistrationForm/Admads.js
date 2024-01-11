@@ -2,8 +2,6 @@ import React, { useState, useContext, useEffect } from 'react';
 import NewContext from '../../context/NewContext';
 import { toast } from 'react-toastify';
 
-const url = process.env.REACT_APP_HOST || "http://localhost:5000";
-
 const Admads = ({ formData, setFormData, onCloseModal, onOpenModal, handleChange }) => {
   const context = useContext(NewContext);
 
